@@ -1,0 +1,59 @@
+.custom-action-button {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  /* 69410D */
+  background: linear-gradient(to bottom, #69410D, #482A02);
+}
+
+.custom-action-button:before{
+  background: url(../../../public/images/CaretUp.svg) no-repeat;
+  background-size: 100% auto;
+}
+
+.custom-action-name {
+  text-align: left;
+  text-shadow: 2px 0 2px #482A02, 0 1px 2px #482A02, -2px 0 2px #482A02, 0 -1px 2px #482A02;
+}
+
+.custom-action-info {
+  text-align: left;
+  text-shadow: 2px 0 2px #482A02, 0 1px 2px #482A02, -2px 0 2px #482A02, 0 -1px 2px #482A02;
+}
+
+.custom-action {
+  position: relative;
+  z-index: 2;
+}
+.custom-action#boost {
+  background: url(../../../public/images/boost.svg) no-repeat;
+  background-size: 100% 100%;
+}
+.custom-action#speed {
+  background: url(../../../public/images/speed.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+@media (max-width: 560px) {
+  .custom-action-badge {
+    height: 30px;
+    width: 30px;
+  }
+
+  .custom-action-name {
+    font-size: 5vw;
+    padding-left: .3rem;
+  }
+
+  .custom-action-button {
+    /* width: 22.3vw; */
+    font-size: 0.75rem;
+  
+  }
+}

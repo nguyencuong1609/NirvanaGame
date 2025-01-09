@@ -1,0 +1,81 @@
+.claim {
+  /* max-width: 200px; */
+  opacity: 0.8;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: -5vh;
+  /* height: 55%; */
+  /* padding-top: 30%; */
+  /* transform: rotate(25deg); */
+}
+
+.claim-container {
+  border-radius: 10px;
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  background: #f3f5e1;
+  width: 33%;
+  margin: auto;
+}
+
+.claim-button {
+  background: linear-gradient(to bottom, #69410D, #482A02);
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+
+.claim-button:disabled {
+  background: linear-gradient(to bottom, #D1D0D0, #868686); /* Gray background when disabled */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+  opacity: 0.8; /* Reduce opacity */
+}
+
+.mining-text {
+  color: #B07626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes rotateAndPause {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.rotating-item {
+  animation: rotateAndPause 1.1s linear infinite;
+}
+.mining-clock{animation: rotateAndPause 1.6s ease infinite;}
+
+@media (max-width: 560px) {
+  .claim {
+    /* padding-top: 15%; */
+    font-size: 1.5rem;
+  }
+
+
+  .claim-button {
+    font-size: 0.9rem;
+  }
+
+  .mining-text {
+    font-size: 0.8rem;
+  }
+
+  .mining-point {
+    font-size: 1rem;
+  }
+}

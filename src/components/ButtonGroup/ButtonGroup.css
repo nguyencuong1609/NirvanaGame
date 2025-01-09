@@ -1,0 +1,27 @@
+.buttons button {
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin: 7vh 0 0 1.5vw; */
+  padding: 4px 0;
+  position: absolute;
+  bottom: 2.5vh;
+  left: 2vw;
+  right: 4vw;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 560px) {
+  .buttons {
+    margin-top: 2rem;
+  }
+}

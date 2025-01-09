@@ -1,0 +1,12 @@
+/* LoginRegisterPage.css */
+.login-register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    background-color: #F3E2A3;
+    padding: 36px;
+  }
+  

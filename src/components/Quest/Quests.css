@@ -1,0 +1,44 @@
+.quests {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.quests button {
+  background: #ada0b7;
+  /* padding: 5px; */
+  border: none;
+  width: 22%;
+  /* height: 15vw; */
+  text-transform: uppercase;
+  z-index:1;
+  padding-left: 6.7vw;
+  line-height: 32px;
+  color: white;
+  padding-top:1px;
+}
+.quests #mission{
+  background: url(../../../public/images/mission.svg) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.quests #refs{
+  background: url(../../../public/images/refs.svg) center bottom no-repeat;
+  background-size: 100% 100%;
+}
+.quests #rewards{
+  background: url(../../../public/images/rewards.svg) center bottom no-repeat;
+  background-size: 100% 100%;
+}
+
+
+@media (max-width: 560px) {
+  .quests {
+    /* margin-top: 1rem; */
+  }
+
+  .quests button {
+    font-size: 0.8rem;
+  }
+}
